@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+/* ------- Modelo de Caja ------- */
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    line-height: 1.5;
+
+    text-align: center;
+    font-weight: 400;
+}
+header {
+    justify-content: space-around;
+    padding: 3%;
+ 
+   }
+   
+   .logo-img {
+     height: 80px;
+     
+   }
+ 
+   .back{  
+ height: 80px;
+   }
+   
+   .logo-text {
+     margin: 0 auto;
+     color: #333;
+   }
+.header{
+    background-image: url(img/photo-header-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    
+}
+.logo-box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 580px;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+.logoa{
+    display: block;
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+  /* grid styles ------------------------------------ */
+  *{
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .container{
+    display: grid;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0.1rem;
+}
+
+  /* generic styles ----------------------------------- */
+  body {
+    font-family: 'Libre Baskerville', serif;
+    line-height: 1.5;
+  }
+  
+  header {
+   padding: 5%;
+  }
+  
+  .logo-img {
+    display: inline-block;
+    height: 80px;
+    padding: 1% 43.33%;
+  }
+  
+  .logo-text {
+    margin: 0 auto;
+    max-width: 28%;
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .figure-img {
+    display: inline-block;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .info1, .info2 {
+    padding: 40px;
+    background-color: #333;
+    color: white;
+  }
+  
+  h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+  
+  p {
+    margin-bottom: 1em;
+  }
+  
+  .info-link {
+    text-decoration: none;
+    color: #ff9900;
+  }
+  @media (min-width: 768px) {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      gap: 0.1rem;
+      height: 100vh;
+    }
+    .logo-img {
+      display: inline-block;
+      position: absolute;
+      left: 80px;
+      top: 60px;
+      height: 80px;
+      padding: 0;
+    }
+    .logo-text {
+      max-width: 15%;
+    }
+    /* child items styles ----------------------------------- */
+
+    .info1 {
+       grid-column: span 2;
+       grid-row: span 2;
+    }
+    
+    .info2 {
+      grid-column: 5/7;
+      grid-row: 3/4 ;
+    }
+    
+    .img1 {
+      grid-column:span 2 ;
+      grid-row:span 2 ;
+    }
+    .img2{
+      grid-column:span 2;
+      grid-row:span 1;
+    }
+    .img3{
+      grid-column:5/7 ;
+      grid-row:2/3 ;
+    }
+    .img4{
+      grid-column:span 2;
+      grid-row:3/4;
+    }
+    .img5{
+      grid-column:3/5 ;
+      grid-row:3/4;
+    }
+    .img6 {
+      grid-column:span 2;
+      grid-row:4/5;
+    }
+    .img7 {
+      grid-column:3/5 ;
+      grid-row:4/5;
+    }
+    .img8{
+      grid-column:5/7 ;
+      grid-row: 4/5 ;
+    }
+  }
